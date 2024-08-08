@@ -1,1 +1,3 @@
 SERIAL_DRIVER = vendor
+
+NKRO_ENABLE = yes
