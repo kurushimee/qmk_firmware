@@ -87,14 +87,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                |------+------+------+------+------+------|
  * | Exit | S2-  |   K  |   W  |   R  |  *2  |                |  *4  |   R  |   B  |   G  |   S  |   Z  |
  * `---------------------------+------+------+------.  ,------+-----------------------------------------'
- *                             |   A  |   O  |  #B  |  |  #C  |   E  |   U  |
+ *                             |   A  |   O  |  AO  |  |  EU  |   E  |   U  |
  *                             `--------------------'  `--------------------'
  */
 [3] = LAYOUT_split_3x6_3(
     STN_RE1, STN_N1,  STN_N2,  STN_N3,  STN_N4,  STN_N5,                             STN_N6,  STN_N7,  STN_N8,  STN_N9,  STN_NA,  STN_FN,
     STN_RE2, STN_S1,  STN_TL,  STN_PL,  STN_HL,  STN_ST1,                            STN_ST3, STN_FR,  STN_PR,  STN_LR,  STN_TR,  STN_DR,
     TG(3),   STN_S2,  STN_KL,  STN_WL,  STN_RL,  STN_ST2,                            STN_ST4, STN_RR,  STN_BR,  STN_GR,  STN_SR,  STN_ZR,
-                                        STN_A,   STN_O,   STN_NB,           STN_NC,  STN_E,   STN_U
+                                        STN_A,   STN_O,   STN_AO,           STN_EU,  STN_E,   STN_U
 ),
 
 /* Gaming
@@ -136,14 +136,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t* record) {
-    if (!process_socd_cleaner(keycode, record, &socd_v)) { return false; }
-    if (!process_socd_cleaner(keycode, record, &socd_h)) { return false; }
+  if (!process_socd_cleaner(keycode, record, &socd_v)) { return false; }
+  if (!process_socd_cleaner(keycode, record, &socd_h)) { return false; }
 
-    return true;
+  return true;
 }
 
 layer_state_t layer_state_set_user(layer_state_t state) {
-    socd_cleaner_enabled = IS_LAYER_ON_STATE(state, 4) || IS_LAYER_ON_STATE(state, 5);
-    return state;
+  socd_cleaner_enabled = IS_LAYER_ON_STATE(state, 4) || IS_LAYER_ON_STATE(state, 5);
+  return state;
 }
         

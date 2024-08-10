@@ -1,0 +1,1 @@
+#define STENO_COMBINEDMAP
