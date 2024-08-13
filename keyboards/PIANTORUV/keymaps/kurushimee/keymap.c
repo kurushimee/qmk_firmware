@@ -24,6 +24,7 @@ socd_cleaner_t socd_h = {{KC_A, KC_D}, SOCD_CLEANER_LAST};
 
 #define ST_GEM QK_STENO_GEMINI
 
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* qwerty
  * ,-----------------------------------------.                ,-----------------------------------------.
@@ -74,9 +75,27 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [2] = LAYOUT_split_3x6_3(
     KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,                              KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
-    KC_LCTL, XXXXXXX, XXXXXXX, TG(4),   TG(3),   KC_PSCR,                            KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_PGUP, KC_CAPS,
+    KC_LCTL, XXXXXXX, XXXXXXX, TG(5),   TG(4),   KC_PSCR,                            KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_PGUP, KC_CAPS,
     KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            KC_HOME, KC_END,  KC_INS,  KC_DEL,  KC_PGDN, KC_LALT,
                                         _______, _______, _______,          QK_BOOT, _______, _______
+),
+
+/* Adjust
+ * ,-----------------------------------------.                ,-----------------------------------------.
+ * | Tab  |      |      |      |      |      |                |      |      |      |      |      |      |
+ * |------+------+------+------+------+------|                |------+------+------+------+------+------|
+ * | Ctrl |      |      |      |      |      |                |   —  |      |      |      |      |      |
+ * |------+------+------+------+------+------|                |------+------+------+------+------+------|
+ * | Shift|      |      |      |      |      |                |      |      |      |      |      | Alt  |
+ * `---------------------------+------+------+------.  ,------+-----------------------------------------'
+ *                             | GUI  |      |Enter |  |Space | Bksp |      |
+ *                             `--------------------'  `--------------------'
+ */
+[3] = LAYOUT_split_3x6_3(
+    KC_TAB,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+    KC_LCTL, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            UC(0x2014),XXXXXXX,XXXXXXX,XXXXXXX, XXXXXXX, XXXXXXX,
+    KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_LALT,
+                                        KC_LGUI, _______, KC_ENT,           KC_SPC,  KC_BSPC, _______
 ),
     
 /* Plover
@@ -90,10 +109,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                             |   A  |   O  |  AO  |  |  EU  |   E  |   U  |
  *                             `--------------------'  `--------------------'
  */
-[3] = LAYOUT_split_3x6_3(
+[4] = LAYOUT_split_3x6_3(
     STN_RE1, STN_N1,  STN_N2,  STN_N3,  STN_N4,  STN_N5,                             STN_N6,  STN_N7,  STN_N8,  STN_N9,  STN_NA,  STN_FN,
     STN_RE2, STN_S1,  STN_TL,  STN_PL,  STN_HL,  STN_ST1,                            STN_ST3, STN_FR,  STN_PR,  STN_LR,  STN_TR,  STN_DR,
-    TG(3),   STN_S2,  STN_KL,  STN_WL,  STN_RL,  STN_ST2,                            STN_ST4, STN_RR,  STN_BR,  STN_GR,  STN_SR,  STN_ZR,
+    TG(4),   STN_S2,  STN_KL,  STN_WL,  STN_RL,  STN_ST2,                            STN_ST4, STN_RR,  STN_BR,  STN_GR,  STN_SR,  STN_ZR,
                                         STN_A,   STN_O,   STN_AO,           STN_EU,  STN_E,   STN_U
 ),
 
@@ -108,11 +127,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                             | Alt  |Space |Lower |  |Enter | Bksp | GUI  |
  *                             `--------------------'  `--------------------'
  */
-[4] = LAYOUT_split_3x6_3(
+[5] = LAYOUT_split_3x6_3(
     KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                               KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_ESC,
     KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                               KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
-    KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                               KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, TG(4),
-                                        KC_LALT, KC_SPC,  MO(5),            KC_ENT,  KC_BSPC, KC_LGUI
+    KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                               KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, TG(5),
+                                        KC_LALT, KC_SPC,  MO(6),            KC_ENT,  KC_BSPC, KC_LGUI
 ),
 
 /* Gaming/Lower
@@ -126,12 +145,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                             | Alt  |Space |      |  |Enter | Bksp | GUI  |
  *                             `--------------------'  `--------------------'
  */
-[5] = LAYOUT_split_3x6_3(
+[6] = LAYOUT_split_3x6_3(
     KC_TAB,  KC_1,    KC_W,    KC_2,    KC_6,    KC_H,                               KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_BSLS,
     KC_LCTL, KC_A,    KC_S,    KC_D,    KC_7,    KC_9,                               KC_MINS, KC_EQL,  KC_GRV,  KC_LBRC, KC_RBRC, KC_PIPE,
     KC_LSFT, KC_3,    KC_4,    KC_5,    KC_8,    KC_0,                               KC_UNDS, KC_PLUS, KC_TILD, KC_LCBR, KC_RCBR, KC_LALT,
                                         KC_LALT, KC_SPC, _______,           KC_SPC,  KC_BSPC, _______
-)
+),
 
 };
 
@@ -144,6 +163,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
 
 layer_state_t layer_state_set_user(layer_state_t state) {
   socd_cleaner_enabled = IS_LAYER_ON_STATE(state, 4) || IS_LAYER_ON_STATE(state, 5);
-  return state;
+  return update_tri_layer_state(state, 1, 2, 3);
 }
         

@@ -5,4 +5,7 @@ STENO_PROTOCOL = geminipr
 AUDIO_ENABLE = no
 MIDI_ENABLE = no
 
+UNICODE_ENABLE = yes
+UNICODE_COMMON = yes
+
 SRC += features/socd_cleaner.c
