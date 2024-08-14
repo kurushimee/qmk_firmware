@@ -4,7 +4,7 @@ This is kurushimee's custom QMK config, adding support for PIANTORUV.
 
 # PIANTORUV
 
-It's my custom split mechanical keyboard based on Piantor. It works just like Piantor, has the exact same layout and positioning of keys. PIANTORUV has two left halves for both halves of the keyboard; the right halve is just like the left halve but flipped. The left halve acts as the main halve — I can connect either halve to the PC, but the one that's connected to the PC via USB-C will always act as the left half.
+It's my custom split mechanical keyboard based on Piantor. It works just like Piantor, has the exact same layout and positioning of keys. PIANTORUV has two left halves for both halves of the keyboard; the right half is just like the left half but flipped. The left half acts as the main half — I can connect either half to the PC, but the one that's connected to the PC via USB-C will always act as the left half.
 
 # Layout
 
