@@ -1,36 +1,15 @@
 # Quantum Mechanical Keyboard Firmware
 
-[![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
-[![Discord](https://img.shields.io/discord/440868230475677696.svg)](https://discord.gg/Uq7gcHh)
-[![Docs Status](https://img.shields.io/badge/docs-ready-orange.svg)](https://docs.qmk.fm)
-[![GitHub contributors](https://img.shields.io/github/contributors/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/pulse/monthly)
-[![GitHub forks](https://img.shields.io/github/forks/qmk/qmk_firmware.svg?style=social&label=Fork)](https://github.com/qmk/qmk_firmware/)
+This is kurushimee's custom QMK config, adding support for PIANTORUV.
 
-This is a keyboard firmware based on the [tmk\_keyboard firmware](https://github.com/tmk/tmk_keyboard) with some useful features for Atmel AVR and ARM controllers, and more specifically, the [OLKB product line](https://olkb.com), the [ErgoDox EZ](https://ergodox-ez.com) keyboard, and the Clueboard product line.
+# PIANTORUV
 
-## Documentation
+It's my custom split mechanical keyboard based on Piantor. It works just like Piantor, has the exact same layout and positioning of keys. PIANTORUV has two left halves for both halves of the keyboard; the right halve is just like the left halve but flipped. The left halve acts as the main halve — I can connect either halve to the PC, but the one that's connected to the PC via USB-C will always act as the left half.
 
-* [See the official documentation on docs.qmk.fm](https://docs.qmk.fm)
+# Layout
 
-The docs are powered by [VitePress](https://vitepress.dev/). They are also viewable offline; see [Previewing the Documentation](https://docs.qmk.fm/#/contributing?id=previewing-the-documentation) for more details.
+You can't use my exact keyboard config because my keyboard is the only one, but you can use my keymap on any 42-key split keyboard with 3 thumb keys on each half.
 
-You can request changes by making a fork and opening a [pull request](https://github.com/qmk/qmk_firmware/pulls).
+The keymap I use is named `kurushimee`. Besides lower, raise, and extend layers, it features a Plover layer emulating Gemini PR, and a gaming layer using SOCD last-input priority on strafing keys. I am also considering learning [ZipChord](https://github.com/psoukie/zipchord) and using it with this keymap, but this is just my personal thing now.
 
-## Supported Keyboards
-
-* [Planck](/keyboards/planck/)
-* [Preonic](/keyboards/preonic/)
-* [ErgoDox EZ](/keyboards/ergodox_ez/)
-* [Clueboard](/keyboards/clueboard/)
-* [Cluepad](/keyboards/clueboard/17/)
-* [Atreus](/keyboards/atreus/)
-
-The project also includes community support for [lots of other keyboards](/keyboards/).
-
-## Maintainers
-
-QMK is developed and maintained by Jack Humbert of OLKB with contributions from the community, and of course, [Hasu](https://github.com/tmk). The OLKB product firmwares are maintained by [Jack Humbert](https://github.com/jackhumbert), the Ergodox EZ by [ZSA Technology Labs](https://github.com/zsa), the Clueboard by [Zach White](https://github.com/skullydazed), and the Atreus by [Phil Hagelberg](https://github.com/technomancy).
-
-## Official Website
-
-[qmk.fm](https://qmk.fm) is the official website of QMK, where you can find links to this page, the documentation, and the keyboards supported by QMK.
+I'm using this keymap on a daily basis for everything I do with my PC. I don't switch to any other keyboards and my keymap is configured to provide me with everything I could ever need.
