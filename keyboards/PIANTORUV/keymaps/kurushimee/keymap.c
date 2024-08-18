@@ -146,9 +146,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                             `--------------------'  `--------------------'
  */
 [6] = LAYOUT_split_3x6_3(
-    KC_TAB,  KC_1,    KC_W,    KC_2,    KC_6,    KC_H,                               KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_BSLS,
-    KC_LCTL, KC_A,    KC_S,    KC_D,    KC_7,    KC_9,                               KC_MINS, KC_EQL,  KC_GRV,  KC_LBRC, KC_RBRC, KC_PIPE,
-    KC_LSFT, KC_3,    KC_4,    KC_5,    KC_8,    KC_0,                               KC_UNDS, KC_PLUS, KC_TILD, KC_LCBR, KC_RCBR, KC_LALT,
+    KC_TAB,  KC_1,    KC_W,    KC_2,    KC_3,    KC_6,                               KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_BSLS,
+    KC_LCTL, KC_A,    KC_S,    KC_D,    KC_4,    KC_7,                               KC_MINS, KC_EQL,  KC_GRV,  KC_LBRC, KC_RBRC, KC_PIPE,
+    KC_LSFT, KC_H,    KC_0,    KC_9,    KC_5,    KC_8,                               KC_UNDS, KC_PLUS, KC_TILD, KC_LCBR, KC_RCBR, KC_LALT,
                                         KC_LALT, KC_SPC, _______,           KC_SPC,  KC_BSPC, _______
 ),
 
