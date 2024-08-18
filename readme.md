@@ -6,7 +6,7 @@ This is kurushimee's custom QMK config, adding support for PIANTORUV.
 
 It's my custom split mechanical keyboard based on Piantor. It works just like Piantor, has the exact same layout and positioning of keys. PIANTORUV has two left halves for both halves of the keyboard; the right half is just like the left half but flipped. The left half acts as the main half — I can connect either half to the PC, but the one that's connected to the PC via USB-C will always act as the left half.
 
-I use the lightest variant of switches, Choc v1 Pinks, and I've lubed them. I've done the o-ring mod to decrease travel distance further. I want to get even lighter springs for my switches to half the force required to press, but unfortunately I can't order them to my country. All of this acts to make it as easy as possible to press chords, as well as just making it nicer to type with for me.
+I use the lightest variant: Choc (v1) Pink, and I've lubed them. I want to get even lighter springs for my switches to possibly almost half the force required to press, but unfortunately I can't order them to my country. All of this acts to make it as easy as possible to press chords, as well as just making it nicer to type with for me.
 
 # Layout
 
