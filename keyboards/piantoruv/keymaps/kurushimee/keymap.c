@@ -28,7 +28,7 @@ enum kuru_layers {
   _PLOVER
 };
 
-enum kurushimee_keycodes {
+enum kuru_keycodes {
   COLEMAK = SAFE_RANGE,
   QWERTY,
   SW_LANG
